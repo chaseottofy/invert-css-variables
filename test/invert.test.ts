@@ -1,5 +1,5 @@
 import invertColor from '../src/utils/invert-color';
-import invertVars from '../src/index';
+import invert from '../src/index';
 
 describe('invertColor', () => {
   test('invert hex', () => {
@@ -40,7 +40,7 @@ describe('invertColorsInRoot', () => {
     const expected = `
   --color-1: #eeeeee;
   --color-2: #000000;`;
-    expect(invertVars(input)).toEqual(expected);
+    expect(invert(input)).toEqual(expected);
   });
 
   it('should handle short and long hex format', () => {
@@ -51,7 +51,7 @@ describe('invertColorsInRoot', () => {
     const expected = `
   --color-1: #eeddcc;
   --color-2: #efdfcf;`;
-    expect(invertVars(input)).toEqual(expected);
+    expect(invert(input)).toEqual(expected);
   });
 
   it('should handle rgb format', () => {
@@ -62,7 +62,7 @@ describe('invertColorsInRoot', () => {
     const expected = `
   --color-1: rgb(245,235,225);
   --color-2: rgb(0,0,0);`;
-    expect(invertVars(input)).toEqual(expected);
+    expect(invert(input)).toEqual(expected);
   });
 
   it('should handle rgba format', () => {
@@ -73,7 +73,7 @@ describe('invertColorsInRoot', () => {
     const expected = `
   --color-1: rgba(245,235,225,0.5);
   --color-2: rgba(0,0,0,0.5);`;
-    expect(invertVars(input)).toEqual(expected);
+    expect(invert(input)).toEqual(expected);
   });
 
   it('should return the same string if no color is found', () => {
@@ -81,7 +81,7 @@ describe('invertColorsInRoot', () => {
       --variable-1: 10px;
       --variable-2: bold;
     `;
-    expect(invertVars(input)).toEqual(input);
+    expect(invert(input)).toEqual(input);
   });
 
   it('should handle invalid color formats gracefully', () => {
@@ -90,6 +90,6 @@ describe('invertColorsInRoot', () => {
       --color-2: rgb(256,256,256);
       --color-3: hsl(390,101%,101%);
     `;
-    expect(invertVars(input)).toEqual(input);  // The colors should remain unchanged
+    expect(invert(input)).toEqual(input);  // The colors should remain unchanged
   });
 });

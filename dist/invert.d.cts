@@ -1,3 +1,3 @@
-declare function invertVars(root: string): string;
+declare function invert(root: string): string;
 
-export { invertVars as default };
+export { invert as default };

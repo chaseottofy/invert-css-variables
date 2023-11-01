@@ -2,7 +2,7 @@ import cliMessages from './utils/cli-messages';
 import invertColor from './utils/invert-color';
 import removePadding from './utils/remove-padding';
 
-export default function invertVars(root: string): string {
+export default function invert(root: string): string {
   const trimmedRoot = removePadding(root);
 
   if (trimmedRoot.slice(0, 4) === 'root') {
