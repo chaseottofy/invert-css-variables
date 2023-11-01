@@ -1,3 +1,16 @@
+const invertRgb = (val: string) => {
+  const num = Number.parseInt(val, 10);
+  if (Number.isNaN(num) || num < 0 || num > 255) return null;
+  return 255 - num;
+};
+
+// flip HSL
+const flipHue = (val: string) => {
+  const num = Number.parseInt(val, 10);
+  if (Number.isNaN(num) || num < 0 || num >= 360) return null;
+  return (num + 180) % 360;
+};
+
 export default function invertColor(color: string): string | null {
   const trimColor = color.trim();
 
@@ -22,13 +35,6 @@ export default function invertColor(color: string): string | null {
     return `#${isLower ? inverted.toLowerCase() : inverted.toUpperCase()}`;
   }
 
-  // Helper function to invert RGB values
-  const invertRgb = (val: string) => {
-    const num = Number.parseInt(val, 10);
-    if (Number.isNaN(num) || num < 0 || num > 255) return null;
-    return 255 - num;
-  };
-
   // Invert RGB and RGBA
   const rgbMatch = trimColor.match(/^rgba?\((\d{1,3}),\s*(\d{1,3}),\s*(\d{1,3})(,\s*([\d.]+))?\)$/);
   if (rgbMatch) {
@@ -44,13 +50,6 @@ export default function invertColor(color: string): string | null {
 
     return a === null ? `rgb(${r},${g},${b})` : `rgba(${r},${g},${b},${a})`;
   }
-
-  // Helper function to flip HSL values
-  const flipHue = (val: string) => {
-    const num = Number.parseInt(val, 10);
-    if (Number.isNaN(num) || num < 0 || num >= 360) return null;
-    return (num + 180) % 360;
-  };
 
   // Invert HSL and HSLA
   const hslMatch = trimColor.match(/^hsla?\((\d{1,3}),\s*(\d{1,3})%,\s*(\d{1,3})%(,\s*([\d.]+))?\)$/);

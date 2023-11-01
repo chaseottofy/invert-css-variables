@@ -9,7 +9,7 @@ export default defineConfig({
   sourcemap: false,
   clean: true,
   minify: true,
-  target: 'es5',
+  target: 'es2019',
   tsconfig: 'tsconfig.json',
   external: ['tslib'],
 });

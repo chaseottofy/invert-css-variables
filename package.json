@@ -47,7 +47,6 @@
     "lint:fix": "eslint . --fix",
     "test": "jest invert.test.ts",
     "tsc": "tsc",
-    "tsc:build": "tsc",
     "tscov": "tscov --details"
   },
   "jest": {

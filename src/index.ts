@@ -31,11 +31,3 @@ export default function invert(root: string): string {
 
   return `\n${invertedLines.join('\n').trimEnd()}`;
 }
-/*
-'
-  --grey1: #737373;
-  --grey2: #828282;
-  --grey3: #aba499;
-  --grey4: #999083;
-'
-*/

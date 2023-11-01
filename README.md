@@ -1,17 +1,24 @@
 # invert-css-variables
 
-> Will make available in a simple web interface soon...
-
 Convert CSS variable colors in bulk.
 
-Simplify the process of converting your Dark/Light themes by inverting your CSS variables in bulk. Maintains the variable names and spacing, and supports all of the color formats in CSS even if they are mixed.
+[![npm Package Version](https://img.shields.io/npm/v/invert-css)](https://www.npmjs.com/package/invert-css)
+[![Minzip Size](https://img.shields.io/bundlephobia/minzip/invert-css)](https://www.npmjs.com/package/invert-css)
 
 ## Table of Contents
 
+- [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Supported Color Formats](#supported-color-formats)
+- [Testing](#testing)
+- [Todo](#todo)
 - [License](#license)
+
+## Features
+
+Simplify the process of converting your Dark/Light themes by inverting your CSS variables in bulk. Maintains the variable names and spacing, and supports all of the color formats in CSS even if they are mixed.
+
 
 ## Installation
 
@@ -51,6 +58,19 @@ result = `
 - RGBA (`rgba(255,255,255,0.5)`)
 - HSL (`hsl(120,100%,50%)`)
 - HSLA (`hsla(120,100%,50%,0.5)`)
+
+## Testing
+
+Tests are written using Jest.
+Clone the repo and run the following command to run the tests:
+
+```
+npm run test
+```
+
+## Todo
+
+- Make available in a simple web interface
 
 ## License
 
