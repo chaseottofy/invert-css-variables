@@ -3,8 +3,6 @@
 Convert CSS variable colors in bulk.
 
 [![npm Package Version](https://img.shields.io/npm/v/invert-css)](https://www.npmjs.com/package/invert-css)
-<!-- [![Minified Size](https://img.shields.io/bundlephobia/min/invert-css)](https://www.npmjs.com/package/invert-css) -->
-<!-- [![Minzip Size](https://img.shields.io/bundlephobia/minzip/invert-css)](https://www.npmjs.com/package/invert-css) -->
 
 ## Table of Contents
 
@@ -62,10 +60,6 @@ result = `
 `;
 */
 ```
-
-## Supported Color Formats
-
-
 
 ## Testing
 

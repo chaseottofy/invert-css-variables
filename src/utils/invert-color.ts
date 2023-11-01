@@ -26,7 +26,6 @@ export default function invertColor(color: string): string | null {
 
     let inverted = '';
     for (let i = 0; i < hex.length; i += 2) {
-      // const val = Number.parseInt(hex.substr(i, 2), 16);
       const val = Number.parseInt(hex.slice(i, i + 2), 16);
       if (Number.isNaN(val)) return null;
       inverted += (255 - val).toString(16).padStart(2, '0');
