@@ -3,22 +3,34 @@
 Convert CSS variable colors in bulk.
 
 [![npm Package Version](https://img.shields.io/npm/v/invert-css)](https://www.npmjs.com/package/invert-css)
-[![Minzip Size](https://img.shields.io/bundlephobia/minzip/invert-css)](https://www.npmjs.com/package/invert-css)
+<!-- [![Minified Size](https://img.shields.io/bundlephobia/min/invert-css)](https://www.npmjs.com/package/invert-css) -->
+<!-- [![Minzip Size](https://img.shields.io/bundlephobia/minzip/invert-css)](https://www.npmjs.com/package/invert-css) -->
 
 ## Table of Contents
 
 - [Features](#features)
+- [Supported Color Formats](#supported-color-formats)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Supported Color Formats](#supported-color-formats)
 - [Testing](#testing)
 - [Todo](#todo)
 - [License](#license)
 
 ## Features
 
-Simplify the process of converting your Dark/Light themes by inverting your CSS variables in bulk. Maintains the variable names and spacing, and supports all of the color formats in CSS even if they are mixed.
+Meant to be used with CSS variables. Simplify the process of converting your Dark/Light themes by inverting your CSS variables in bulk.
 
+- Supports all of the color formats in CSS even if they are mixed.
+- Maintains the variable names and output will have proper spacing.
+- Written in TypeScript without any dependencies.
+
+### Supported Color Formats
+
+- Hex (both short `#123` and long `#112233` formats)
+- RGB (`rgb(255,255,255)`)
+- RGBA (`rgba(255,255,255,0.5)`)
+- HSL (`hsl(120,100%,50%)`)
+- HSLA (`hsla(120,100%,50%,0.5)`)
 
 ## Installation
 
@@ -53,11 +65,7 @@ result = `
 
 ## Supported Color Formats
 
-- Hex (both short `#123` and long `#112233` formats)
-- RGB (`rgb(255,255,255)`)
-- RGBA (`rgba(255,255,255,0.5)`)
-- HSL (`hsl(120,100%,50%)`)
-- HSLA (`hsla(120,100%,50%,0.5)`)
+
 
 ## Testing
 

@@ -1,6 +1,6 @@
 {
   "name": "invert-css",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "CLI tool to invert css variables in bulk",
   "keywords": [
     "css",
