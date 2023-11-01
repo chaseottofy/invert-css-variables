@@ -1,30 +1,33 @@
 # invert-css-variables
 
-Convert CSS variable colors in bulk.
+> Will make available in a simple web interface soon..
 
-> getting it ready for npm currently
+NPM package to convert CSS variable colors in bulk.
 
-This is a simple package that inverts the colors of CSS variables in bulk. After not finding a similar tool that did this, I've decided to share my own since I find myself using it quite often when it comes to creating a dark/light theme for a website.
+Tiny 1.4kb zip package to convert CSS variable colors in bulk. Tired of manually inverting colors for dark/light themes? This will simplify the process for you. Just pass in a string of CSS variables and it will invert the colors and return it in a ready-to-use string.
 
-Covers all of the supported color formats in CSS: Hex, RGB, RGBA, HSL, and HSLA. 
+Covers all of the supported color formats in CSS: Hex, RGB, RGBA, HSL, and HSLA. Supports both short and long hex formats. Variable names are preserved.
 
 ## Table of Contents
 
+- [Installation](#installation)
+- [Usage](#usage)
 - [Supported Color Formats](#supported-color-formats)
-- [Examples](#examples)
 - [License](#license)
 
-<!-- ## Installation
+## Installation
 
-To install `invertColorsInRoot` via NPM:
-
+To install `invert-css` via NPM:
+ 
 ```bash
-npm install invert-colors-in-root
-``` -->
+npm i invert-css
+```
 
 ## Usage
 
 ```javascript
+import invert from 'invert-css';
+
 const input = `
   --accent-1: #111;
   --accent-2: rgb(255,170,204);
@@ -39,7 +42,6 @@ result = `
   --accent-3: hsl(160,100%,88%);
 `;
 */
-
 ```
 
 ## Supported Color Formats
@@ -49,24 +51,6 @@ result = `
 - RGBA (`rgba(255,255,255,0.5)`)
 - HSL (`hsl(120,100%,50%)`)
 - HSLA (`hsla(120,100%,50%,0.5)`)
-
-## Examples
-
-### Input
-
-```
-  --accent-1: #111;
-  --accent-2: rgb(255,170,204);
-  --accent-3: hsl(340,100%,88%);
-```
-
-### Output
-
-```
-  --accent-1: #eee;
-  --accent-2: rgb(0,85,51);
-  --accent-3: hsl(160,100%,88%);
-```
 
 ## License
 
