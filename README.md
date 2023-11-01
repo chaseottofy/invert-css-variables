@@ -1,10 +1,9 @@
 # invert-css-variables
 
 Convert CSS variable colors in bulk.
+[USE THE UI WEB TOOL INSTEAD](https://github.com/chaseottofy/invert-css-variables-ui)
 
 [![npm Package Version](https://img.shields.io/npm/v/invert-css)](https://www.npmjs.com/package/invert-css)
-
-**New:** [Try it out in your browser](https://codepen.io/chaseottofy/pen/XWOKeoy)
 
 ## Table of Contents
 
