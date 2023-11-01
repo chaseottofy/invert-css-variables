@@ -1,5 +1,7 @@
 # invert-css-variables
 
+Convert CSS variable colors in bulk.
+
 > getting it ready for npm currently
 
 This is a simple package that inverts the colors of CSS variables in bulk. After not finding a similar tool that did this, I've decided to share my own since I find myself using it quite often when it comes to creating a dark/light theme for a website.
