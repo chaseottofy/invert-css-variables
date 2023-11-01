@@ -1,38 +1,43 @@
 # invert-css-variables
 
-Easily invert the colors of your CSS variables in bulk.
+> getting it ready for npm currently
 
-<!-- ## Table of Contents
+This is a simple package that inverts the colors of CSS variables in bulk. After not finding a similar tool that did this, I've decided to share my own since I find myself using it quite often when it comes to creating a dark/light theme for a website.
 
-- [Installation](#installation)
-- [Usage](#usage)
+Covers all of the supported color formats in CSS: Hex, RGB, RGBA, HSL, and HSLA. 
+
+## Table of Contents
+
 - [Supported Color Formats](#supported-color-formats)
 - [Examples](#examples)
-- [Contribution](#contribution)
 - [License](#license)
 
-## Installation
+<!-- ## Installation
 
 To install `invertColorsInRoot` via NPM:
 
 ```bash
 npm install invert-colors-in-root
-```
+``` -->
 
 ## Usage
 
-Simply provide your CSS variable string to the `invertColorsInRoot` function to get the inverted colors.
-
 ```javascript
-const { invertColorsInRoot } = require('invert-colors-in-root');
-
 const input = `
-  --color-1: #123;
-  --color-2: #102030;
+  --accent-1: #111;
+  --accent-2: rgb(255,170,204);
+  --accent-3: hsl(340,100%,88%);
 `;
 
-const result = invertColorsInRoot(input);
-console.log(result);
+const result = invert(input);
+/*
+result = `
+  --accent-1: #eee;
+  --accent-2: rgb(0,85,51);
+  --accent-3: hsl(160,100%,88%);
+`;
+*/
+
 ```
 
 ## Supported Color Formats
@@ -56,19 +61,11 @@ console.log(result);
 ### Output
 
 ```
---accent-1: #eee;
---accent-2: rgb(0,85,51);
---accent-3: hsl(160,100%,88%);
+  --accent-1: #eee;
+  --accent-2: rgb(0,85,51);
+  --accent-3: hsl(160,100%,88%);
 ```
-
-## Contribution
-
-If you'd like to contribute to `invertColorsInRoot`, please fork the repository, use a feature branch, and send us a pull request!
 
 ## License
 
 This project is licensed under the MIT License - see the `LICENSE.md` file for details.
-
----
-
-For more details, questions, or issues, please refer to the official documentation or open an issue on the repository. -->
