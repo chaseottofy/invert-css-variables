@@ -4,6 +4,8 @@ Convert CSS variable colors in bulk.
 
 [![npm Package Version](https://img.shields.io/npm/v/invert-css)](https://www.npmjs.com/package/invert-css)
 
+**New:** [Try it out in your browser](https://codepen.io/chaseottofy/pen/XWOKeoy)
+
 ## Table of Contents
 
 - [Features](#features)
