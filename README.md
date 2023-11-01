@@ -1,12 +1,10 @@
 # invert-css-variables
 
-> Will make available in a simple web interface soon..
+> Will make available in a simple web interface soon...
 
-NPM package to convert CSS variable colors in bulk.
+Convert CSS variable colors in bulk.
 
-Tiny 1.4kb zip package to convert CSS variable colors in bulk. Tired of manually inverting colors for dark/light themes? This will simplify the process for you. Just pass in a string of CSS variables and it will invert the colors and return it in a ready-to-use string.
-
-Covers all of the supported color formats in CSS: Hex, RGB, RGBA, HSL, and HSLA. Supports both short and long hex formats. Variable names are preserved.
+Simplify the process of converting your Dark/Light themes by inverting your CSS variables in bulk. Maintains the variable names and spacing, and supports all of the color formats in CSS even if they are mixed.
 
 ## Table of Contents
 
@@ -32,6 +30,7 @@ const input = `
   --accent-1: #111;
   --accent-2: rgb(255,170,204);
   --accent-3: hsl(340,100%,88%);
+  --accent-4: #FFFFFF;
 `;
 
 const result = invert(input);
@@ -40,6 +39,7 @@ result = `
   --accent-1: #eee;
   --accent-2: rgb(0,85,51);
   --accent-3: hsl(160,100%,88%);
+  --accent-4: #000000;
 `;
 */
 ```
